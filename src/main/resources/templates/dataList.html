@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+U S U A R I O S
+<div th:each="item: ${users}">
+    <h1 th:text ="${item.user}"></h1>
+    <h1 th:text ="${item.pass}"></h1>
+    <br>
+</div>
+<h1 th:text="${name}"></h1>
+</body>
+</html>
